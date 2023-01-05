@@ -1,0 +1,9 @@
+- name: Install some core packages
+  community.general.pacman:
+    name:
+      - vim
+      - fortune-mod
+    state: present
+    
+   
+

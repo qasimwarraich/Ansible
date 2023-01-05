@@ -1,0 +1,8 @@
+---
+- name: Include all tasks
+  include_tasks: "{{ item }}"
+  loop:
+    - update_system.yml
+    - core_packages.yml
+
+
