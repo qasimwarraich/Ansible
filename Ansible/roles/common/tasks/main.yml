@@ -4,5 +4,6 @@
   loop:
     - update_system.yml
     - core_packages.yml
+    - build_nvim.yml
 
 

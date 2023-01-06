@@ -1,0 +1,23 @@
+---
+- name: Clone neovim repo
+  ansible.builtin.git:
+    repo: 'https://github.com/neovim/neovim.git'
+    dest: /home/root/Clones/neovim
+
+- name: Ensure build dependencies
+  community.general.pacman:
+    name:
+      - base-devel
+      - cmake
+      - unzip
+      - ninja
+      - tree-sitter
+      - curl
+    state: present
+
+- name: Build Nvim
+  community.general.make:
+    chdir: /home/root/Clones/neovim
+    target: install
+    params:
+      CMAKE_BUILD_TYPE: Release
