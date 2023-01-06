@@ -3,6 +3,12 @@
     name:
       - vim
       - fortune-mod
+      - man
+      - alacritty
+      - firefox
+      - git
+      - base-devel
+      - tmux
     state: present
     
    
