@@ -1,0 +1,43 @@
+---
+
+- name: Install pacman packages
+  tags: nvim-lsp
+  community.general.pacman:
+    name:
+      - gopls
+      - rust-analyzer
+      - lua-language-server
+      - pyright
+      - jedi-language-server
+      - clang
+      - deno
+    state: present
+
+- name: Install Typescript package
+  tags: nvim-lsp
+  community.general.npm:
+    name: typescript-language-server
+    global: true
+
+- name: Install vscode-langservers-extracted
+  tags: nvim-lsp
+  community.general.npm:
+    name: vscode-langservers-extracted
+    global: true
+      
+- name: Install svelte ls
+  tags: nvim-lsp
+  community.general.npm:
+    name: svelte-language-server
+    global: true
+
+- name: Install emmet ls
+  tags: nvim-lsp
+  community.general.npm:
+    name: emmet-ls
+    global: true
+
+- name: Install tailwind ls
+  tags: nvim-lsp
+  ansible.builtin.shell:
+    cmd: npm i -g @tailwindcss/language-server

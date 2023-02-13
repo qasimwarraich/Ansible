@@ -19,3 +19,9 @@
   include_tasks: "{{ item }}"
   loop:
     - build_nvim.yml
+
+- name: Include nvim lsp task
+  tags: nvim-lsp
+  include_tasks: "{{ item }}"
+  loop:
+    - install_lsps.yml
