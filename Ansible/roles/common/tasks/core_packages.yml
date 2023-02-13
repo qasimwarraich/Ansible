@@ -1,5 +1,6 @@
 - name: Install some core packages
   tags: packages
+  become: yes
   community.general.pacman:
     name:
       - vim
@@ -9,6 +10,7 @@
       - dhcpcd
       - swaybg
       - brightnessctl
+      - ydotool
       - bemenu
       - bemenu-wayland
       - firefox
