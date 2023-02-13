@@ -13,7 +13,13 @@
       - deno
     state: present
 
-- name: Install Typescript package
+- name: Install typescript 
+  tags: nvim-lsp
+  community.general.npm:
+    name: typescript
+    global: true
+
+- name: Install tsserver
   tags: nvim-lsp
   community.general.npm:
     name: typescript-language-server
