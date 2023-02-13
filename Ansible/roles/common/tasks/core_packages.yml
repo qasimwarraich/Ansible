@@ -9,13 +9,16 @@
       - alacritty
       - zathura
       - dhcpcd
+      - ntp
       - ttf-hack-nerd
       - ttf-joypixels
+      - unicode-emoji
       - vimiv
       - swaybg
       - xdg-desktop-portal-wlr
       - xorg-xwayland
       - grim
+      - slurp
       - brightnessctl
       - ydotool
       - bemenu
