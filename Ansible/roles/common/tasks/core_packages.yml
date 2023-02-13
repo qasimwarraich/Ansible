@@ -6,6 +6,9 @@
       - fortune-mod
       - man
       - alacritty
+      - dhcpcd
+      - bemenu
+      - bemenu-wayland
       - firefox
       - git
       - base-devel
