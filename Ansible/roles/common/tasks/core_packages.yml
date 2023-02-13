@@ -9,6 +9,16 @@
       - git
       - base-devel
       - tmux
+      - pcmanfm
+      - keepassxc
+      - nextcloud-client
+      - discord
+      - udisks2
+      - dunst
+      - thunderbird
+      - wl-clipboard
+      - ripgrep
+      - fzf
     state: present
     
    
