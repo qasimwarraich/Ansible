@@ -1,5 +1,6 @@
 - name: Update system
   tags: packages
+  become: yes
   community.general.pacman:
     update_cache: true
     upgrade: true
