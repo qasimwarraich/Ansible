@@ -7,8 +7,15 @@
       - fortune-mod
       - man
       - alacritty
+      - zathura
       - dhcpcd
+      - ttf-hack-nerd
+      - ttf-joypixels
+      - vimiv
       - swaybg
+      - xdg-desktop-portal-wlr
+      - xorg-xwayland
+      - grim
       - brightnessctl
       - ydotool
       - bemenu
