@@ -1,4 +1,5 @@
 - name: Install some core packages
+  tags: packages
   community.general.pacman:
     name:
       - vim
@@ -9,10 +10,11 @@
       - git
       - base-devel
       - tmux
-      - pcmanfm
+      - pcmanfm-gtk3
       - keepassxc
       - nextcloud-client
       - discord
+      - signal-desktop
       - udisks2
       - dunst
       - thunderbird

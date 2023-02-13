@@ -7,3 +7,15 @@
     - build_nvim.yml
 
 
+- name: Include packages task
+  tags: packages
+  include_tasks: "{{ item }}"
+  loop:
+    - update_system.yml
+    - core_packages.yml
+
+- name: Include nvim task
+  tags: nvim
+  include_tasks: "{{ item }}"
+  loop:
+    - build_nvim.yml

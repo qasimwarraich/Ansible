@@ -1,10 +1,12 @@
 ---
 - name: Clone neovim repo
+  tags: nvim
   ansible.builtin.git:
     repo: 'https://github.com/neovim/neovim.git'
     dest: /home/spam/Clones/neovim
 
 - name: Ensure build dependencies
+  tags: nvim
   community.general.pacman:
     name:
       - base-devel
@@ -16,6 +18,7 @@
     state: present
 
 - name: Build Nvim
+  tags: nvim
   community.general.make:
     chdir: /home/spam/Clones/neovim
     target: install
