@@ -4,6 +4,7 @@
   community.general.pacman:
     name:
       - vim
+      - mpv
       - fortune-mod
       - man
       - alacritty
