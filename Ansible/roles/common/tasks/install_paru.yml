@@ -1,0 +1,20 @@
+---
+
+- name: Clone paru repo
+  tags: paru
+  ansible.builtin.git:
+    repo: 'https://aur.archlinux.org/paru.git'
+    dest: /home/spam/Clones/paru
+
+- name: Ensure build dependencies
+  tags: paru
+  community.general.pacman:
+    name:
+      - base-devel
+    state: present
+
+- name: Build paru
+  tags: nvim
+  ansible.builtin.shell: makepkg -si
+  args:
+    chdir: /home/spam/Clones/neovim

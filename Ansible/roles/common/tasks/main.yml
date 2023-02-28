@@ -5,7 +5,7 @@
     - update_system.yml
     - core_packages.yml
     - build_nvim.yml
-
+    - install_paru.yml
 
 - name: Include packages task
   tags: packages
@@ -25,3 +25,9 @@
   include_tasks: "{{ item }}"
   loop:
     - install_lsps.yml
+      
+- name: Include paru install task
+  tags: paru
+  include_tasks: "{{ item }}"
+  loop:
+    - install_paru.yml
