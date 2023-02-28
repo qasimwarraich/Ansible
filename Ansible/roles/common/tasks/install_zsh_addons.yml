@@ -1,0 +1,18 @@
+---
+- name: Clone zsh-syntax-highlighting repo
+  tags: zsh
+  ansible.builtin.git:
+    repo: 'https://github.com/zsh-users/zsh-syntax-highlighting'
+    dest: /home/spam/.config/zsh_config/zsh-syntax-highlighting
+
+- name: Clone zsh-autosuggestions repo
+  tags: zsh
+  ansible.builtin.git:
+    repo: 'https://github.com/zsh-users/zsh-autosuggestions'
+    dest: /home/spam/.config/zsh_config/zsh-autosuggestions
+
+- name: Clone fzf-tab repo
+  tags: zsh
+  ansible.builtin.git:
+    repo: 'https://github.com/Aloxaf/fzf-tab'
+    dest: /home/spam/.config/zsh_config/fzf-tab

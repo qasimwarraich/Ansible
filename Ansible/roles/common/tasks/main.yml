@@ -6,6 +6,7 @@
     - core_packages.yml
     - build_nvim.yml
     - install_paru.yml
+    - install_zsh_addons.yml
 
 - name: Include packages task
   tags: packages
@@ -31,3 +32,9 @@
   include_tasks: "{{ item }}"
   loop:
     - install_paru.yml
+
+- name: Include zsh addons install task
+  tags: zsh
+  include_tasks: "{{ item }}"
+  loop:
+    - install_zsh_addons.yml
