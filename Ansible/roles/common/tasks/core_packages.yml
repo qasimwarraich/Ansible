@@ -39,6 +39,13 @@
       - wl-clipboard
       - ripgrep
       - fzf
+      - tldr
+      - rsync
+      - starship
+      - blueman
+      - bluzutils
+      - unzip
+      - htop
     state: present
     
    
