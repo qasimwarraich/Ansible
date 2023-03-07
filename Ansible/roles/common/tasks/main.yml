@@ -5,7 +5,6 @@
     - update_system.yml
     - core_packages.yml
     - build_nvim.yml
-    - install_paru.yml
     - install_zsh_addons.yml
 
 - name: Include packages task

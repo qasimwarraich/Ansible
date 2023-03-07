@@ -2,6 +2,7 @@
 
 - name: Clone paru repo
   tags: paru
+  become: no
   ansible.builtin.git:
     repo: 'https://aur.archlinux.org/paru.git'
     dest: /home/spam/Clones/paru
@@ -14,7 +15,8 @@
     state: present
 
 - name: Build paru
-  tags: nvim
+  tags: paru
+  become: no
   ansible.builtin.shell: makepkg -si
   args:
-    chdir: /home/spam/Clones/neovim
+    chdir: /home/spam/Clones/paru
