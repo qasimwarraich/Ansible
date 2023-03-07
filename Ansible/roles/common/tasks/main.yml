@@ -4,6 +4,7 @@
   loop:
     - update_system.yml
     - core_packages.yml
+    - misc_system.yml
     - build_nvim.yml
     - install_zsh_addons.yml
 
@@ -37,3 +38,9 @@
   include_tasks: "{{ item }}"
   loop:
     - install_zsh_addons.yml
+
+- name: Include misc system setup task
+  tags: misc-system
+  include_tasks: "{{ item }}"
+  loop:
+    - misc_system.yml

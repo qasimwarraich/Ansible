@@ -1,0 +1,3 @@
+- name: Start and enable bluetooth service
+  become: yes
+  ansible.builtin.shell: systemctl enable bluetooth.service
