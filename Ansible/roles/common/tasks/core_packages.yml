@@ -34,6 +34,7 @@
       - discord
       - signal-desktop
       - udisks2
+      - udiskie
       - dunst
       - thunderbird
       - wl-clipboard
