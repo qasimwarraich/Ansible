@@ -9,7 +9,6 @@
       - man
       - alacritty
       - zathura
-      - dhcpcd
       - ntp
       - ttf-hack-nerd
       - ttf-joypixels
@@ -18,6 +17,8 @@
       - swaybg
       - xdg-desktop-portal-wlr
       - xorg-xwayland
+      - qt5-wayland
+      - qt6-wayland
       - grim
       - slurp
       - brightnessctl
