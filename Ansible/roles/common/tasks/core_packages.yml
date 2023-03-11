@@ -27,6 +27,7 @@
       - bemenu-wayland
       - firefox
       - git
+      - stow
       - base-devel
       - tmux
       - pcmanfm-gtk3
