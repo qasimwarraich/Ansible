@@ -1,0 +1,4 @@
+- name: Install Ansible community.general collection
+  tags: ansible-galaxy
+  become: no
+  ansible.builtin.shell: ansible-galaxy collection install community.general

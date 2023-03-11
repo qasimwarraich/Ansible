@@ -2,11 +2,18 @@
 - name: Include all tasks
   include_tasks: "{{ item }}"
   loop:
+    - install_community_collection.yml
     - update_system.yml
     - core_packages.yml
     - misc_system.yml
     - build_nvim.yml
     - install_zsh_addons.yml
+
+- name: Install Ansible community.general collection
+  tags: ansible-galaxy
+  include_tasks: "{{ item }}"
+  loop:
+    - install_community_collection.yml
 
 - name: Include packages task
   tags: packages
