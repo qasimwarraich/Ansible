@@ -19,6 +19,7 @@
       - xorg-xwayland
       - qt5-wayland
       - qt6-wayland
+      - kanshi
       - grim
       - slurp
       - brightnessctl
