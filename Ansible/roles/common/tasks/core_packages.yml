@@ -28,6 +28,7 @@
       - bemenu-wayland
       - firefox
       - git
+      - github-cli
       - stow
       - base-devel
       - tmux
