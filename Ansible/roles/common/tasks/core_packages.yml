@@ -52,6 +52,7 @@
       - bluez-utils
       - unzip
       - htop
+      - zsh
     state: present
     
    
