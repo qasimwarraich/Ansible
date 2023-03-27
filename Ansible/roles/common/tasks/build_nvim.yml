@@ -1,6 +1,7 @@
 ---
 - name: Clone neovim repo
   tags: nvim
+  become: false
   ansible.builtin.git:
     repo: 'https://github.com/neovim/neovim.git'
     dest: /home/spam/Clones/neovim
