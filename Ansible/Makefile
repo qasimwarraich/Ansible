@@ -15,3 +15,6 @@ zsh:
 	
 tex:
 	ansible-playbook site.yml -t tex --ask-become-pass
+
+todos:
+	ansible-playbook site.yml -t todos

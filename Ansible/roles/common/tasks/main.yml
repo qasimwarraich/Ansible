@@ -8,6 +8,7 @@
     - misc_system.yml
     - build_nvim.yml
     - install_zsh_addons.yml
+    - todos.yml
 
 - name: Install Ansible community.general collection
   tags: ansible-galaxy
@@ -57,3 +58,9 @@
   include_tasks: "{{ item }}"
   loop:
     - tex.yml
+
+- name: Include Todos
+  tags: todos
+  include_tasks: "{{ item }}"
+  loop:
+    - todos.yml
