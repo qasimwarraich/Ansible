@@ -51,3 +51,9 @@
   include_tasks: "{{ item }}"
   loop:
     - misc_system.yml
+
+- name: Include TeX related tasks
+  tags: tex
+  include_tasks: "{{ item }}"
+  loop:
+    - tex.yml

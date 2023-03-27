@@ -1,0 +1,12 @@
+
+- name: Install TeX Related Packages
+  tags: tex
+  become: yes
+  community.general.pacman:
+    name:
+      - texlive-most
+      - pandoc-cli
+    state: present
+    
+   
+
