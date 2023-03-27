@@ -9,6 +9,7 @@
       - man
       - alacritty
       - zathura
+      - zathura-pdf-mupdf
       - ntp
       - ttf-hack-nerd
       - ttf-joypixels
