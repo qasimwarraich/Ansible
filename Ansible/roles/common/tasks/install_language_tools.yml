@@ -4,16 +4,25 @@
   tags: lang-tools
   community.general.pacman:
     name:
+      - go
       - gopls
+      - rustup
       - rust-analyzer
       - lua-language-server
+      - stylua
       - pyright
       - jedi-language-server
       - clang
       - deno
-      - stylua
       - shfmt
+      - shellcheck
+      - yamllint
     state: present
+
+- name: Install Rust Toolchain 
+  tags: lang-tools
+  become: no
+  ansible.builtin.shell: rustup default stable
 
 - name: Install typescript 
   tags: lang-tools
