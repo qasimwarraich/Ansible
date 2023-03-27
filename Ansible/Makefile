@@ -7,8 +7,8 @@ packages:
 nvim:
 	ansible-playbook site.yml -t nvim --ask-become-pass
 
-nvim-lsp:
-	ansible-playbook site.yml -t nvim-lsp --ask-become-pass
+lang-tools:
+	ansible-playbook site.yml -t lang-tools --ask-become-pass
 
 zsh:
 	ansible-playbook site.yml -t zsh --ask-become-pass
