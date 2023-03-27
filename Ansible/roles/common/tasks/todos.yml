@@ -3,12 +3,13 @@
   vars:
     msg: |
       
+      
 
       Enable Pacman parallell Downloads!
       --------------------------------
       sudoedit /etc/pacman.conf
       ================================
-
+      
       
       
 
@@ -19,6 +20,32 @@
       ================================
 
 
+      
+
+      Setup PW-Manager, SSH keys and GPG
+      --------------------------------
+      Log into nextcloud
+      ================================
+
+
+
+      
+      Change Repo Origins
+      --------------------------------
+      For this repo and dotfiles
+      ================================
+
+
+
+
+      Unstow .dotfiles if not done already
+      --------------------------------
+      stow -vt ~ *
+      ================================
+
+
+
+      
       
   debug:
     msg: "{{ msg.split('\n') }}"
