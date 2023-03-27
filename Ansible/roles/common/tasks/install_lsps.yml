@@ -12,6 +12,7 @@
       - clang
       - deno
       - stylua
+      - shfmt
     state: present
 
 - name: Install typescript 
