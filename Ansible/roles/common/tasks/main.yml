@@ -28,11 +28,11 @@
   loop:
     - build_nvim.yml
 
-- name: Include nvim lsp task
-  tags: nvim-lsp
+- name: Include language tooling task
+  tags: lang-tools
   include_tasks: "{{ item }}"
   loop:
-    - install_lsps.yml
+    - install_language_tools.yml
       
 - name: Include paru install task
   tags: paru
