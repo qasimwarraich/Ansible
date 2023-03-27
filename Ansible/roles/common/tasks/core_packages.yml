@@ -47,6 +47,7 @@
       - fzf
       - fd
       - tldr
+      - zip
       - rsync
       - starship
       - blueman
