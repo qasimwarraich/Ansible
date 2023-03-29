@@ -17,6 +17,7 @@
       - shfmt
       - shellcheck
       - yamllint
+      - prettier
     state: present
 
 - name: Install Rust Toolchain 
