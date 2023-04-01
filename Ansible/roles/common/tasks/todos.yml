@@ -46,6 +46,14 @@
 
 
       
+      Setup git signing and git-delta
+      --------------------------------
+      edit global .gitconfig
+      ================================
+
+
+
+      
       
   debug:
     msg: "{{ msg.split('\n') }}"
