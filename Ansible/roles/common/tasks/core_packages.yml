@@ -30,6 +30,7 @@
       - firefox
       - git
       - github-cli
+      - git-delta
       - stow
       - base-devel
       - tmux
@@ -44,6 +45,7 @@
       - thunderbird
       - wl-clipboard
       - ripgrep
+      - bat
       - fzf
       - fd
       - tldr
