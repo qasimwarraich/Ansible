@@ -5,6 +5,7 @@
   ansible.builtin.git:
     repo: 'https://github.com/neovim/neovim.git'
     dest: /home/spam/Clones/neovim
+    force: true
 
 - name: Ensure build dependencies
   tags: nvim
