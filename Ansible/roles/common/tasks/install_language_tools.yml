@@ -7,7 +7,6 @@
       - go
       - gopls
       - rustup
-      - rust-analyzer
       - lua-language-server
       - stylua
       - pyright
@@ -24,6 +23,7 @@
   tags: lang-tools
   become: no
   ansible.builtin.shell: rustup default stable
+  ansible.builtin.shell: rustup component add rust-analyzer
 
 - name: Install typescript 
   tags: lang-tools
